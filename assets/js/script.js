@@ -7,13 +7,13 @@ function openSocial(type) {
 
   switch (type) {
     case 'discord':
-      url = 'https://discord.com/users/1014884454847746058';
+      url = 'https://discord.com/users/542859339384356884';
       break;
-    case 'github':
-      url = 'https://github.com/tdvne';
+    case 'NameMC':
+      url = 'https://namemc.com/profile/Comfort';
       break;
-    case 'twitter':
-      url = 'https://twitter.com/tdvnethegreat';
+    case 'NameMC2':
+      url = 'https://namemc.com/profile/ICumOnMen.1';
       break;
   }
 
@@ -37,7 +37,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['Java', 'JavaScript', 'HTML', 'Bash', 'TypeScript'];
+  let text = ['Autistic', 'Frick Cheater', 'Retarded', 'Latvian', ''];
 
   text.forEach(function (language, index) {
     typer.move(null);
@@ -62,7 +62,7 @@ function startMainTyping() {
 }
 
 function switchScreen() {
-  document.title = 'Edater | Home';
+  document.title = 'Vipex | Home';
 
   $('.intro').fadeOut(1000, function () {
     $('.bg-image').fadeIn(1000);
