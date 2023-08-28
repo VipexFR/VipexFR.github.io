@@ -9,11 +9,14 @@ function openSocial(type) {
     case 'discord':
       url = 'https://discord.com/users/542859339384356884';
       break;
-    case 'NameMC':
+    case 'namemc':
       url = 'https://namemc.com/profile/Comfort';
       break;
-    case 'NameMC2':
+    case 'namemc2':
       url = 'https://namemc.com/profile/ICumOnMen.1';
+      break;
+    case 'telegram':
+      url = 'https://t.me/vipexing';
       break;
   }
 
