@@ -50,10 +50,10 @@ function typerStartTyping(typer) {
 
   text.forEach(function (language, index) {
     typer.move(null);
-    typer.type(language, { delay: 1 });
+    typer.type(language, { delay: 1000 });
     typer.pause(1);
 
-    typer.delete(language.length, { delay: 1 });
+    typer.delete(language.length, { delay: 1000 });
   });
 
   typer.go();
@@ -61,7 +61,7 @@ function typerStartTyping(typer) {
 
 function startMainTyping() {
   let typer = new TypeIt('#subtext', {
-    speed: 1000,
+    speed: 50,
     afterComplete: async () => {
       typerStartTyping(typer);
     },
