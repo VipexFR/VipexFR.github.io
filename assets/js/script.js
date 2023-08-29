@@ -18,10 +18,16 @@ function openSocial(type) {
     case 'telegram':
       url = 'https://t.me/vipexing';
       break;
+      break;
+    case 'exodus':
+      url = 'https://vipex.wiki/addy';
+      break;
   }
 
   window.open(url);
 }
+
+
 
 function startIntroTyping() {
   new TypeIt('#intro-text', {
@@ -44,10 +50,10 @@ function typerStartTyping(typer) {
 
   text.forEach(function (language, index) {
     typer.move(null);
-    typer.type(language, { delay: 1000 });
-    typer.pause(1000);
+    typer.type(language, { delay: 1 });
+    typer.pause(1);
 
-    typer.delete(language.length, { delay: 1000 });
+    typer.delete(language.length, { delay: 1 });
   });
 
   typer.go();
@@ -55,7 +61,7 @@ function typerStartTyping(typer) {
 
 function startMainTyping() {
   let typer = new TypeIt('#subtext', {
-    speed: 50,
+    speed: 1000,
     afterComplete: async () => {
       typerStartTyping(typer);
     },
